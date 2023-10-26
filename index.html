@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Calculation</title>
+</head>
+<body>
+    <h1>Date Calculation</h1>
+    <p id="result"></p>
+
+    <script>
+        // Set the target date (6/28/2020)
+        const targetDate = new Date('2020-06-28');
+        
+        // Get today's date
+        const today = new Date();
+        
+        // Set the date to subtract (5/15/23)
+        const subtractDate = new Date('2023-05-15');
+        
+        // Calculate the difference in days
+        const differenceInDays = Math.floor((today - subtractDate) / (1000 * 60 * 60 * 24));
+        
+        // Add the difference in days to the target date
+        targetDate.setDate(targetDate.getDate() + differenceInDays);
+        
+        // Format the result as a string
+        const resultString = `Result: ${targetDate.toDateString()}`;
+        
+        // Display the result
+        document.getElementById("result").textContent = resultString;
+    </script>
+</body>
+</html>
