@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Date Calculation</title>
+    <title>Evmo</title>
 </head>
 <body>
-    <h1>Date Calculation</h1>
     <p id="result"></p>
 
     <script>
@@ -24,7 +23,7 @@
         targetDate.setDate(targetDate.getDate() + differenceInDays);
         
         // Format the result as a string
-        const resultString = `Result: ${targetDate.toDateString()}`;
+        const resultString = `${targetDate.toDateString()}`;
         
         // Display the result
         document.getElementById("result").textContent = resultString;
